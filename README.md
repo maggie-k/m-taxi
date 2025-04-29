@@ -28,5 +28,5 @@ Add payment integration
 Implement smart features
 
 Contact:
-Maggie K.
+maggie k.
 k.maggiewamboi@gmail.com 
