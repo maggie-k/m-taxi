@@ -1,0 +1,97 @@
+<!-- Updated 'ride_request.html' for a more professional look -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Ride - Madame Taxi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 50px;
+            font-size: 36px;
+        }
+
+        .form-container {
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            border-radius: 8px;
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 14px;
+            margin: 12px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .cta-button {
+            background-color: #007BFF;
+            color: white;
+            font-size: 18px;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Request a Ride</h1>
+
+    <div class="form-container">
+        <form action="/request_ride" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="text" name="location" placeholder="Your Location" required>
+
+            <label for="driver_gender">Preferred Driver Gender</label>
+            <select name="driver_gender" id="driver_gender" required>
+                <option value="male">Male</option>
+                <option value="female" selected>Female</option>
+                <option value="non-binary">Non-Binary</option>
+            </select>
+
+            <!-- Checkbox for Toddler Car Seat -->
+            <label for="needs_car_seat">Do you need a toddler car seat?</label>
+            <input type="checkbox" name="needs_car_seat" id="needs_car_seat" value="yes">
+
+            <button type="submit" class="cta-button">Find a Ride</button>
+        </form>
+
+        <a href="/" class="back-link">Back to Home</a>
+    </div>
+</body>
+</html>

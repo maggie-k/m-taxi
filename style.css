@@ -1,0 +1,110 @@
+/* Basic styling for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light background for contrast */
+    color: #333; /* Default text color */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Black for headings */
+h1 {
+    color: #000000; /* Black text for headings */
+    margin-top: 50px;
+}
+
+/* Creating a metallic gradient effect for buttons */
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #6a6a6a, #b5b5b5, #ffffff) !important; /* Metallic gradient */
+    color: black !important;  /* Black text for contrast */
+    font-size: 18px;
+    text-decoration: none;
+    border: none !important; /* Remove default border */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adding depth */
+    cursor: pointer;
+}
+
+/* Button hover effect with a darker metallic shade */
+.cta-button:hover {
+    background: linear-gradient(45deg, #b5b5b5, #8d8d8d, #f0f0f0) !important; /* Slightly darker gradient */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Darker shadow for hover */
+}
+
+/* A subtle metallic gradient background for the container */
+.details-container {
+    background: linear-gradient(45deg, #6a6a6a, #b5b5b5, #ffffff);
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Back link with black color */
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #000000; /* Black color for text links */
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Basic form styling */
+input[type="text"], select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Form container background and styling */
+.form-container {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Metallic gradient background for the form container */
+form {
+    background: linear-gradient(45deg, #6a6a6a, #b5b5b5, #ffffff);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Hover effects for the form input fields */
+input[type="text"]:focus, select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .cta-button {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    .details-container, .form-container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
