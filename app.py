@@ -4,10 +4,10 @@ app = Flask(__name__)
 
 # Simulated driver database with car seat availability (can later be replaced by a real database)
 drivers = [
-    {"name": "Jane Doe", "location": "Nairobi", "gender": "female", "has_car_seat": True},
-    {"name": "John Smith", "location": "Downtown", "gender": "male", "has_car_seat": False},
-    {"name": "Alex Taylor", "location": "Suburbs", "gender": "non-binary", "has_car_seat": True},
-    {"name": "David Brown", "location": "Uptown", "gender": "male", "has_car_seat": True}
+    {"name": "Hey Zuri", "location": "Nairobi", "gender": "female", "has_car_seat": True},
+    {"name": "Hey Siri", "location": "Downtown", "gender": "male", "has_car_seat": False},
+    {"name": "Google Assistant", "location": "Suburbs", "gender": "non-binary", "has_car_seat": True},
+    {"name": "Quantum Comp", "location": "Uptown", "gender": "male", "has_car_seat": True}
 ]
 
 @app.route('/')
