@@ -2,9 +2,8 @@ A ride-hailing platform set to address existing gaps in the market, the prototyp
 
 Features:
 Simple homepage for users
-Ride request form with pickup/drop-off details
+Ride request form 
 Driver matching screen with driver details
-Exclusive: Option to request a toddler car seat
 Safety-focused and user-friendly design
 
 Folder Structure:
